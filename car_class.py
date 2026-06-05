@@ -10,3 +10,15 @@ class Car:
         self.__speed -= 5
     def get_speed(self):
         return self.__speed
+        
+def test_car():
+    car = Car(2024, "Toyota")
+    
+    for _ in range(5):
+        car.accelerate()
+        print("Speed after accelerating:", car.get_speed())
+    for _ in range(5):
+        car.brake()
+        print("Speed after braking:", car.get_speed())
+
+test_car()
